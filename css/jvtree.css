@@ -1,5 +1,10 @@
 
-  a{
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ a{
     color: #fb612d;
     text-decoration: none;
   }
@@ -8,10 +13,22 @@
   }
   
   /*nav style start*/
-nav{
+.navbar{
     border-bottom: 1px solid #fb612d;
-    background-color: #ffffff;
+    background-color: #ffffff; 
+    padding: 7px;
+    position: sticky;
+   
+    top: 0;
+    
+    z-index: 1;
+    opacity: .90;
+
+
 }
+
+
+
 .navbar-nav{
     margin-left: 50px;
 }
@@ -47,6 +64,45 @@ nav{
     margin-right: 10px;
   }
                 /*nav style end*/
+
+                /*nav small media*/
+                
+ @media only screen and (max-width: 691px) {
+.navbar{
+               height: 163px;
+               
+            }} 
+
+@media only screen and (max-width: 691px) {
+.navbar button{
+               border: none;
+               margin-left: 14px;
+            
+            }}  
+
+@media only screen and (max-width: 691px) {
+    .navbar button:focus{
+             box-shadow: none !important; 
+    }
+    
+} 
+  @media only screen and (max-width: 691px) {
+    .navbar .container-fluid{
+             background-color: #FFF;
+             border-radius: 8px;
+             padding: 20px;
+    }
+    
+}   
+@media only screen and (max-width: 691px) {
+    .active-nav{
+        border-bottom: 3px solid #fb612d;
+        border-radius:5px  ;
+        width: 100px;
+    }
+    
+}            
+
 
                 /*carousel start*/
 .carousel-item{
@@ -144,78 +200,77 @@ nav{
 
 
  
-               .paragraph-slid{
-                background-color: #877964;
-                color: #ffffff;
+.paragraph-slid{
+     background-color: #877964;
+     color: #ffffff;
                           }
 
-              .paragraph-slid h2 i{
-                 margin-right: -22px; 
-                 color: #fb612d;
+.paragraph-slid h2 i{
+      margin-right: -22px; 
+      color: #fb612d;
                           }
               
               
               
-               @-webkit-keyframes scroll {
-                  0% {
-                   -webkit-transform: translateX(0);
-                   transform: translateX(0);
-                              }
-              100% {
-                   -webkit-transform: translateX(calc(-250px * 7));
-                           transform: translateX(calc(-250px * 7));
-                              }
-                            }
+@-webkit-keyframes scroll {
+  0% {
+       -webkit-transform: translateX(0);
+       transform: translateX(0);
+          }
+          100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
+                   }
+                 }
                             
-              @keyframes scroll {
-               0% {
-                    -webkit-transform: translateX(0);
-                    transform: translateX(0);
+@keyframes scroll {
+ 0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
                               }
-               100% {
-                  -webkit-transform: translateX(calc(-250px * 7));
-                   transform: translateX(calc(-250px * 7));
+ 100% {
+        -webkit-transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
                               }
                             }
               .slider {
-                  background: #877964;
-                  color: #ffffff;
-                  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-                  height: 100%x;
-                  width: 100%;
-                  margin: auto;
-                  overflow: hidden;
-                  position: relative;
+       background: #877964;
+       color: #ffffff;
+       box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+       height: 100%x;
+       width: 100%;
+       margin: auto;
+       overflow: hidden;
+       position: relative;
                             }
-              .slider::before, .slider::after {
-                              content: "";
-                              position: absolute;
-                              z-index: 2;
-                            }
-                            .slider::after {
-                              right: 50;
-                              top: 50;
-                              -webkit-transform: rotateZ(180deg);
-                                      transform: rotateZ(180deg);
-                            }
-                            .slider::before {
-                              left: 50;
-                              top: 50;
-                            }
-                            .slider .slide-track {
-                              -webkit-animation: scroll 50s linear infinite;
-                                      animation: scroll 50s linear infinite;
-                              display: flex;
-                              width: calc(250px * 14);
-                            }
-                            .slider .slide {
-                              height: 100%;
-                              width: 100%;
-                              padding: 40px 50px;
-                              font-size: medium;
-                              font-weight: 500;
-                          
-                            }
+.slider::before, .slider::after {
+        content: "";
+        position: absolute;
+        z-index: 2;
+ }
+ .slider::after {
+        right: 50;
+        top: 50;
+        -webkit-transform: rotateZ(180deg);
+        transform: rotateZ(180deg);
+}
+.slider::before {
+        left: 50;
+        top: 50;
+}
+.slider .slide-track {
+         -webkit-animation: scroll 50s linear infinite;
+         animation: scroll 50s linear infinite;
+         display: flex;
+         width: calc(250px * 14);
+}
+.slider .slide {
+         height: 100%;
+         width: 100%;
+         padding: 40px 50px;
+         font-size: medium;
+         font-weight: 500;
+                          }
 
                    /*paragraph slid start*/
 
@@ -223,12 +278,12 @@ nav{
 .text-align {
     text-align: center;
 }
-.contact h2 i{
+.contactt h2 i{
     margin-right: -19px; 
     color: #fb612d;
     
 }
-.contact p{
+.contactt p{
     font-size: large;
     font-weight: 500;
     text-align: center;

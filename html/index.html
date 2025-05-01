@@ -10,16 +10,16 @@
 </head>
 <body>
     <!--nav start-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixedd">
         <div class="container-fluid">
-            <img src="https://files.cdn-files-a.com/uploads/9625076/400_66cf7dc054223.png" alt="logo" width="242" height="90px">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <img src="https://files.cdn-files-a.com/uploads/9625076/400_66cf7dc054223.png" alt="logo" width="242" height="90px" class="logo">
+          <button class="navbar-toggler mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars fa-lg" style="color: #fb612d;"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" >
               <li class="nav-item">
-                <a class="nav-link active-nav" aria-current="page" href="#">Home</a>
+                <a class="nav-link active-nav" href="/html/index.html">Home</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="#about">About</a>
@@ -31,11 +31,11 @@
                 <a class="nav-link" href="#testimonials">Testimonials</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#contactt">Contact</a>
               </li>
             </ul>
           </div>
-          <div class="sochal-media">
+          <div class="sochal-media mt-3">
             <i class="fa-solid fa-envelope fa-lg"></i>
             <i class="fa-solid fa-phone fa-lg"></i>
           </div>
@@ -44,7 +44,7 @@
     <!--nav end-->
 
     <!--Carousel start-->
-    <div id="carouselExampleCaptions" class="carousel slide">
+    <section id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -74,7 +74,7 @@
           </div>
         </div>
        
-      </div>
+    </section>
     <!--Carousel end-->
 
     <!--About us Start-->
@@ -201,12 +201,12 @@
 
 
     <!--paragraph slid start-->
-  <section class="paragraph-slid">
-  <div class="row pt-5 pr-0" id="testimonials">
+  <section class="paragraph-slid" id="testimonials">
+  <div class="row pt-5 pr-0">
     <div class="col">
       <h2 class="text-center">Testimonials
         <br>
-        <i class="fa fa-angle-down text-center" aria-hidden="true"></i>
+        <i class="fa fa-angle-down text-center" aria-hidden="true" id="testimonials"></i>
         <i class="fa fa-angle-down text-center" aria-hidden="true"></i>
         <i class="fa fa-angle-down text-center" aria-hidden="true"></i>
         <i class="fa fa-angle-down text-center" aria-hidden="true"></i>
@@ -282,22 +282,22 @@
 
 
     <!--contact start-->
-    <section class="contact mt-5" id="contact">
+    <section class="contactt mt-5">
       <div class="container">
         <div class="row text-align">
           <div class="col-12">
             <h2 class="h2 text-center"> contact 
                <br>
-        <i class="fa fa-angle-down text-center" aria-hidden="true"></i>
-        <i class="fa fa-angle-down text-center" aria-hidden="true"></i>
-        <i class="fa fa-angle-down text-center" aria-hidden="true"></i>
-        <i class="fa fa-angle-down text-center" aria-hidden="true"></i>
+                     <i class="fa fa-angle-down text-center" aria-hidden="true"></i>
+                     <i class="fa fa-angle-down text-center" aria-hidden="true"></i>
+                     <i class="fa fa-angle-down text-center" aria-hidden="true"></i>
+                     <i class="fa fa-angle-down text-center" aria-hidden="true"></i>
             </h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 text-align mt-5">
-            <p>Hunter Close, Potters Bar, UK <br>
+            <p >Hunter Close, Potters Bar, UK <br>
               Potters bar en6 2px</p>
               <a href="tel:+905365986312">
                 <span>+905365986312</span>
@@ -309,14 +309,14 @@
                 <p>Mon-Sat: 07:00am - 19:00pm</p>
           </div>
           <!--form-->
-          <div class="col-md-6">
+          <div class="col-md-6"  id="contactt">
             <div class="cont">
               <form id="contactus" action="" method="post">
                   <fieldset> <input placeholder="name" type="text" tabindex="1" required autofocus> </fieldset>
                   <fieldset> <input placeholder="Email Address" type="email" tabindex="2" required> </fieldset>
                   <fieldset> <input placeholder="Phone Number" type="tel" tabindex="3" required> </fieldset>
                   <fieldset> <textarea placeholder="Type your message here..." tabindex="5" required></textarea> </fieldset>
-                  <fieldset> <button name="submit" type="submit" id="contactus-submit" data-submit="...Sending"><i id="icon" class=""></i> Send Now</button> </fieldset>
+                  <fieldset> <button name="submit" type="submit" id="contactus-submit" data-submit="...Sending"><i id="icon"></i> Send Now</button> </fieldset>
               </form>
           </div>
           </div>
@@ -349,39 +349,7 @@
 
   </footer>
 
-
-
-
-
-
-
-
-
                                <!--footer end-->
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
 
 
@@ -392,6 +360,7 @@
 
 <!--script start-->
     <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/main.js"></script>
     
 </body>
 </html>
