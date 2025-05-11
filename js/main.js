@@ -10,12 +10,12 @@ window.addEventListener("scroll", () => {
 
 
 // Add active class to the current button (highlight it)
-var nav = document.getElementById("navUl");
-var navlinks = nav.getElementsByClassName("nav-link");
-for (var i = 0; i < navlinks.length; i++) {
-  navlinks[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active-nav");
-  current.className = current.className.replace("active-nav", "");
-  this.className += "active-nav";
-  });
+const nav = document.getElementById("navUl");
+const navLinks = nav.getElementsByClassName("nav-link");
+for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener("click", function () {
+        const current = document.getElementsByClassName("active-nav")[0];
+        current.className = current.className.replace("active-nav", "");
+        navLinks[i].classList.add("active-nav");
+    });
 }
